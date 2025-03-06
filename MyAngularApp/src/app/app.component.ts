@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 <<<<<<< HEAD
+<<<<<<< HEAD
   message: string = "Hello from BridgeLabz";  // Define message property
+=======
+  message: string = "Hello from Bridgelabz";  
+  logoPath: string = 'assets/BL_logo_square_jpg.jpg'; 
+>>>>>>> UC2_BridgeLabz_Logo
 =======
   message: string = "Hello from Bridgelabz";  
   logoPath: string = 'assets/BL_logo_square_jpg.jpg'; 
