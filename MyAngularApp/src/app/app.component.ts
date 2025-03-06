@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,15 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  message: string = "Hello from BridgeLabz";  // Define message property
-=======
-  message: string = "Hello from Bridgelabz";  
-  logoPath: string = 'assets/BL_logo_square_jpg.jpg'; 
->>>>>>> UC2_BridgeLabz_Logo
-=======
-  message: string = "Hello from Bridgelabz";  
-  logoPath: string = 'assets/BL_logo_square_jpg.jpg'; 
->>>>>>> UC2_BridgeLabz_Logo
+  title = 'HelloWorldApp';
+  logoPath: string ='assets/BL_logo_square_jpg.jpg';
+  url = "https://www.bridgelabz.com/"
+
+  ngOnInit(): void{
+    this.title = "Hello from BridgeLabz."
+  }
+
+  onClick($event : MouseEvent){
+    console.log("Save Button is clicked!", $event);
+    window.open(this.url, "_blank");
+  }
 }
